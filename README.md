@@ -33,5 +33,5 @@ You can also access the CI server and view the status of the build here [Snap CI
 
 ### Purple Team Names:
 
-1. Tomas Haffenden
-2. Howie Mann
+1. Howie Mann
+2. Tomas Haffenden
