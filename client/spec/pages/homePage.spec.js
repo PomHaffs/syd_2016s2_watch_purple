@@ -15,15 +15,26 @@ describe('The Home Page', function() {
 
   describe('button event handlers', function() {
 
+    // describe('right', function() {
+    //
+    //   it('should take the user to the contacts page', function() {
+    //     spyOn(window.App, 'navigate');
+    //     page.configureButtons();
+    //     eventHub.trigger('right');
+    //     expect(window.App.navigate).toHaveBeenCalledWith('contacts');
+    //   });
+    // });
+
     describe('right', function() {
 
-      it('should take the user to the contacts page', function() {
+      it('should take the user to the compliment page', function() {
         spyOn(window.App, 'navigate');
         page.configureButtons();
         eventHub.trigger('right');
-        expect(window.App.navigate).toHaveBeenCalledWith('contacts');
+        expect(window.App.navigate).toHaveBeenCalledWith('compliment');
       });
     });
+
 
     describe('top', function() {
       it('should scroll the watch face up', function() {

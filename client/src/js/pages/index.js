@@ -5,7 +5,8 @@ module.exports = {
   404: require('./404Page'),
   team: require('./teamPage'),
   home: require('./homePage'),
-  contacts: require('./contactsPage'),
+  // contacts: require('./contactsPage'),
   eventsList: require('./eventsList'),
-  eventDetails: require('./eventDetails')
+  eventDetails: require('./eventDetails'),
+  compliment: require('./complimentPage')
 };

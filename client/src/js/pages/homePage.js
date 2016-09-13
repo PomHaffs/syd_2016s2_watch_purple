@@ -9,14 +9,19 @@ var homePage = Page.extend({
   template: require('../../templates/pages/home.hbs'),
 
   buttonEvents: {
-    right: 'goToContacts',
+    right: 'goToCompliment',
     top: 'scrollUp',
     bottom: 'scrollDown'
   },
 
-  goToContacts: function() {
-    window.App.navigate('contacts');
+  // goToContacts: function() {
+  //   window.App.navigate('contacts');
+  // },
+
+  goToCompliment: function() {
+    window.App.navigate('compliment');
   },
+
 
   scrollUp: function() {
     $('#watch-face').animate({scrollTop: '-=70px'});

@@ -2,8 +2,8 @@
 
 var Contact = Backbone.Model.extend({
   defaults: {
-    name: 'Jimmy',
-    phoneNumber: '0431111222'
+    name: 'Sam',
+    message: 'You look great in that red dress'
   }
 });
 
