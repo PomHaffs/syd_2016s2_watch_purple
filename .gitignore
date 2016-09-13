@@ -20,3 +20,5 @@ dist/
 public/
 build/
 coverage/
+
+*.swp
