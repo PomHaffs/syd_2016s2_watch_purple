@@ -35,7 +35,6 @@ describe('The Home Page', function() {
       });
     });
 
-
     describe('top', function() {
       it('should scroll the watch face up', function() {
         spyOn(page, 'scrollUp');

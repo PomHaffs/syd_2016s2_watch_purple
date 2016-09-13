@@ -22,7 +22,6 @@ var homePage = Page.extend({
     window.App.navigate('compliment');
   },
 
-
   scrollUp: function() {
     $('#watch-face').animate({scrollTop: '-=70px'});
   },
