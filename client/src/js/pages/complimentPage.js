@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var Page = require('watch_framework').Page;
 var complimentPage = Page.extend({
