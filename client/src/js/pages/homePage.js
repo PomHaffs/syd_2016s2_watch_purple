@@ -9,17 +9,13 @@ var homePage = Page.extend({
   template: require('../../templates/pages/home.hbs'),
 
   buttonEvents: {
-    right: 'goToCompliment',
+    right: 'goToCompliments',
     top: 'scrollUp',
     bottom: 'scrollDown'
   },
 
-  // goToContacts: function() {
-  //   window.App.navigate('contacts');
-  // },
-
-  goToCompliment: function() {
-    window.App.navigate('compliment');
+  goToCompliments: function() {
+    window.App.navigate('compliments');
   },
 
   scrollUp: function() {

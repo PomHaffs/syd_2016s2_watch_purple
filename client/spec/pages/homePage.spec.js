@@ -31,7 +31,7 @@ describe('The Home Page', function() {
         spyOn(window.App, 'navigate');
         page.configureButtons();
         eventHub.trigger('right');
-        expect(window.App.navigate).toHaveBeenCalledWith('compliment');
+        expect(window.App.navigate).toHaveBeenCalledWith('compliments');
       });
     });
 
