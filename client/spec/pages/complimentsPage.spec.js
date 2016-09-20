@@ -28,17 +28,17 @@ describe('The Compliments page', function() {
 
   });
 
-  // describe('rendering', function() {
-  //
-  //   it('should produce the correct HTML', function() {
-  //     page.render();
-  //     expect(page.$el).toContainText('Hello, World!');
-  //   });
-  //
-  //   it('returns the view object', function() {
-  //     expect(page.render()).toEqual(page);
-  //   });
-  //
-  // });
+  describe('rendering', function() {
+
+    it('should produce the correct HTML', function() {
+      page.render();
+      expect(page.$el).toContainText('RANDOM COMPLIMENT!');
+    });
+
+    it('returns the view object', function() {
+      expect(page.render()).toEqual(page);
+    });
+
+  });
 
 });
