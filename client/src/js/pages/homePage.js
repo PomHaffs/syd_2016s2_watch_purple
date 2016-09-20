@@ -10,7 +10,7 @@ var homePage = Page.extend({
 
   buttonEvents: {
     right: 'goToCompliment',
-    top: 'scrollUp',
+    top: 'goToAskEmotion',
     bottom: 'scrollDown'
   },
 
@@ -20,6 +20,10 @@ var homePage = Page.extend({
 
   goToCompliment: function() {
     window.App.navigate('compliment');
+  },
+
+  goToAskEmotion: function() {
+    window.App.navigate('askEmotion');
   },
 
   scrollUp: function() {

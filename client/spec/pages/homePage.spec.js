@@ -15,16 +15,6 @@ describe('The Home Page', function() {
 
   describe('button event handlers', function() {
 
-    // describe('right', function() {
-    //
-    //   it('should take the user to the contacts page', function() {
-    //     spyOn(window.App, 'navigate');
-    //     page.configureButtons();
-    //     eventHub.trigger('right');
-    //     expect(window.App.navigate).toHaveBeenCalledWith('contacts');
-    //   });
-    // });
-
     describe('right', function() {
 
       it('should take the user to the compliment page', function() {
@@ -36,11 +26,11 @@ describe('The Home Page', function() {
     });
 
     describe('top', function() {
-      it('should scroll the watch face up', function() {
-        spyOn(page, 'scrollUp');
+      it('should go to the emotion analysis page', function() {
+        spyOn(window.App, 'navigate');
         page.configureButtons();
         eventHub.trigger('top');
-        expect(page.scrollUp).toHaveBeenCalled();
+        expect(window.App.navigate).toHaveBeenCalledWith('askEmotion');
       });
     });
 

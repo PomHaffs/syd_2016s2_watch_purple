@@ -7,5 +7,6 @@ module.exports = {
   home: require('./homePage'),
   eventsList: require('./eventsList'),
   eventDetails: require('./eventDetails'),
-  compliment: require('./complimentPage')
+  compliment: require('./complimentPage'),
+  askEmotion: require('./askEmotionPage')
 };
