@@ -55,11 +55,6 @@ describe('The Home Page', function() {
 
   describe('rendering', function() {
 
-    it('should produce the correct HTML', function() {
-      page.render();
-      expect(page.$el).toContainText('Hello, World!');
-    });
-
     it('should not show the logo', function() {
       page.render();
       expect(page.$el.html()).not.toContain("<img src=\"");
