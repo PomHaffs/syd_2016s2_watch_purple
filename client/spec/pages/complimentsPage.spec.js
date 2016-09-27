@@ -25,7 +25,6 @@ describe('The Compliments page', function() {
       });
     });
 
-
   });
 
   // describe('rendering', function() {
