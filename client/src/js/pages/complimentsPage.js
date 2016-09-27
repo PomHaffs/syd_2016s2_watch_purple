@@ -17,11 +17,17 @@ var complimentsPage = Page.extend({
     window.App.navigate('');
   },
 
+  randomCompliments: function() {
+    return storage.complimentsData.sample().get('message');
+  },
+
   render: function() {
-    var compliment = storage.complimentsData.first().get('message')
+    var compliment = this.randomCompliments();
+
+
       this.$el.html(this.template({compliment:compliment}));
       return this;
-    }
+  }
 
 });
 
