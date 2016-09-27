@@ -22,4 +22,18 @@ describe('The Exercise Page', function() {
       expect(page.$el).toContainText('Yoga');
     });
   });
+
+  describe('button event handlers', function() {
+    describe ('face', function() {
+      it('should take the user back to the home page', function() {
+        spyOn(window.App, 'navigate');
+        page.configureButtons();
+        eventHub.trigger('face');
+        expect(window.App.navigate).toHaveBeenCalledWith('home');
+      });
+    });
+  });
+
+
+
 });
