@@ -17,9 +17,9 @@ describe('The Exercise Page', function() {
       expect(page.$el).toContainText('Go for a run!');
     });
 
-    it('should display "Meditate" to the user', function() {
+    it('should display "Yoga" to the user', function() {
       page.render();
-      expect(page.$el).toContainText('Meditate');
+      expect(page.$el).toContainText('Yoga');
     });
   });
 });

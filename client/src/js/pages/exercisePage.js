@@ -5,7 +5,7 @@ var exercisePage = Page.extend({
   id: 'exercise',
 
   render: function() {
-    this.$el.html('<div>Go for a run!!</div><div>Meditate</div>');
+    this.$el.html('<div>Go for a run!!</div><div>Yoga</div>');
     return this;
   }
 });
