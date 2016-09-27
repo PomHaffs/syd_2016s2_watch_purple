@@ -9,5 +9,6 @@ module.exports = {
   eventDetails: require('./eventDetails'),
   askEmotion: require('./askEmotionPage'),
   compliments: require('./complimentsPage'),
-  exercise: require('./exercisePage')
+  exercise: require('./exercisePage'),
+  runWalkOptions: require('./runWalkOptionsPage')
 };

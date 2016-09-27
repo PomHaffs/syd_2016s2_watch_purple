@@ -5,11 +5,15 @@ var exercisePage = Page.extend({
   id: 'exercise',
 
   buttonEvents: {
-    face: 'goToHome'
+    face: 'goToHome',
+    top: 'goToRunWalkOptions'
   },
 
   goToHome: function() {
     window.App.navigate('home');
+  },
+  goToRunWalkOptions: function() {
+    window.App.navigate('runWalkOptions');
   },
 
   render: function() {
