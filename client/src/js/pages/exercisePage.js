@@ -4,10 +4,19 @@ var Page = require('watch_framework').Page;
 var exercisePage = Page.extend({
   id: 'exercise',
 
+  buttonEvents: {
+    face: 'goToHome'
+  },
+
+  goToHome: function(){
+    window.App.navigate('home');
+  },
+
   render: function() {
-    this.$el.html('<div>Go for a run!!</div><div>Yoga</div>');
+    this.$el.html('<div class="exercise-top">Yoga</div><div class="exercise-bottom">Run</div>');
     return this;
   }
+
 });
 
 module.exports = exercisePage;

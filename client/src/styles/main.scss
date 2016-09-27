@@ -192,3 +192,13 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+// Exercisepage CSS layout
+.exercise-top, .exercise-bottom {
+  font-size: 30px;
+  text-align: center;
+}
+
+.exercise-bottom {
+  padding-top: 125px;
+}

@@ -12,9 +12,9 @@ describe('The Exercise Page', function() {
   });
 
   describe ('rendering', function() {
-    it('should display "Go for a run!" to the user', function() {
+    it('should display "Run" to the user', function() {
       page.render();
-      expect(page.$el).toContainText('Go for a run!');
+      expect(page.$el).toContainText('Run');
     });
 
     it('should display "Yoga" to the user', function() {
