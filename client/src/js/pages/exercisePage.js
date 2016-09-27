@@ -8,12 +8,12 @@ var exercisePage = Page.extend({
     face: 'goToHome'
   },
 
-  goToHome: function(){
+  goToHome: function() {
     window.App.navigate('home');
   },
 
   render: function() {
-    this.$el.html('<div class="exercise-top">Yoga</div><div class="exercise-bottom">Run</div>');
+    this.$el.html('<div class="exercise-top">RUN/WALK</div><div class="exercise-bottom">YOGA</div>');
     return this;
   }
 

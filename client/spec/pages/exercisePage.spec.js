@@ -14,12 +14,12 @@ describe('The Exercise Page', function() {
   describe ('rendering', function() {
     it('should display "Run" to the user', function() {
       page.render();
-      expect(page.$el).toContainText('Run');
+      expect(page.$el).toContainText('RUN/ WALK');
     });
 
     it('should display "Yoga" to the user', function() {
       page.render();
-      expect(page.$el).toContainText('Yoga');
+      expect(page.$el).toContainText('YOGA');
     });
   });
 
@@ -33,7 +33,5 @@ describe('The Exercise Page', function() {
       });
     });
   });
-
-
 
 });
