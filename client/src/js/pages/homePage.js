@@ -11,7 +11,8 @@ var homePage = Page.extend({
   buttonEvents: {
     top: 'goToAskEmotion',
     right: 'goToCompliments',
-    bottom: 'scrollDown'
+    bottom: 'scrollDown',
+    left: 'goToExercise'
   },
 
   goToCompliments: function() {
@@ -28,6 +29,10 @@ var homePage = Page.extend({
 
   scrollDown: function() {
     $('#watch-face').animate({scrollTop: '+=70px'});
+  },
+
+  goToExercise: function() {
+    window.App.navigate('exercise');
   },
 
   render: function() {

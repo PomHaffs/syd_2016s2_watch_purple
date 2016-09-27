@@ -1,8 +1,8 @@
-'use strict'
+'use strict';
 
 var Page = require('watch_framework').Page;
 
-var askEmotionPage = Page.extend({
+var AskEmotionPage = Page.extend({
 
   id: 'askEmotion',
 
@@ -15,4 +15,4 @@ var askEmotionPage = Page.extend({
 
 });
 
-module.exports = askEmotionPage;
+module.exports = AskEmotionPage;

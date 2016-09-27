@@ -8,5 +8,6 @@ module.exports = {
   eventsList: require('./eventsList'),
   eventDetails: require('./eventDetails'),
   askEmotion: require('./askEmotionPage'),
-  compliments: require('./complimentsPage')
+  compliments: require('./complimentsPage'),
+  exercise: require('./exercisePage')
 };
