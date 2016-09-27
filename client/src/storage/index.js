@@ -7,7 +7,7 @@ function Storage() {
   this.eventsData = new Backbone.Collection();
   this.eventsData.add(eventsData.events);
   this.complimentsData = new Backbone.Collection();
-  this.complimentsData.add(complimentsData);
+  this.complimentsData.add(complimentsData.compliments);
 }
 
 module.exports = new Storage();

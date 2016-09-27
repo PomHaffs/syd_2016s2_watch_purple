@@ -25,14 +25,13 @@ describe('The Compliments page', function() {
       });
     });
 
-
   });
 
   describe('rendering', function() {
 
-    it('should produce the correct HTML', function() {
+    it('should produce the first compliment', function() {
       page.render();
-      expect(page.$el).toContainText('RANDOM COMPLIMENT!');
+      expect(page.$el).toContainText('compliment one');
     });
 
     it('returns the view object', function() {

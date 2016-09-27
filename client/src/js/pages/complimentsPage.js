@@ -1,6 +1,7 @@
 'use strict';
 
-var Page = require('watch_framework').Page;
+var Page = require('watch_framework').Page,
+  storage = require ("../../storage");
 
 var complimentsPage = Page.extend({
 
@@ -16,10 +17,11 @@ var complimentsPage = Page.extend({
     window.App.navigate('');
   },
 
-  render: function () {
-      this.$el.html(this.template());
+  render: function() {
+    var compliment = storage.complimentsData.first().get('message')
+      this.$el.html(this.template({compliment:compliment}));
       return this;
-  }
+    }
 
 });
 
