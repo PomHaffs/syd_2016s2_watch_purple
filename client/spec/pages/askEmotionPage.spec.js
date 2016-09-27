@@ -1,6 +1,6 @@
 'use strict';
 
-var askEmotionPage = require('../../src/js/pages/askEmotionPage'),
+var askEmotionPage = require('../../src/js/pages/AskEmotionPage'),
     page;
 
 describe('The ask emotion page', function() {
