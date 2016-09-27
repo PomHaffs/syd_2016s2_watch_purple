@@ -1,12 +1,12 @@
 'use strict';
 
-var askEmotionPage = require('../../src/js/pages/AskEmotionPage'),
+var askEmotionPage = require('../../src/js/pages/askEmotionPage'),
     page;
 
 describe('The ask emotion page', function() {
 
     beforeEach(function() {
-        page = new AskEmotionPage();
+        page = new askEmotionPage();
       });
 
     describe('rendering', function() {
