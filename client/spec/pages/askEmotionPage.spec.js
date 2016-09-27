@@ -6,7 +6,7 @@ var askEmotionPage = require('../../src/js/pages/askEmotionPage'),
 describe('The ask emotion page', function() {
 
     beforeEach(function() {
-        page = new AskEmotionPage();
+        page = new askEmotionPage();
       });
 
     describe('rendering', function() {
