@@ -30,9 +30,9 @@ var homePage = Page.extend({
   scrollDown: function() {
     $('#watch-face').animate({scrollTop: '+=70px'});
   },
-  
+
   goToExercise: function() {
-    window.App.navigate('exercise');  
+    window.App.navigate('exercise');
   },
 
   render: function() {
