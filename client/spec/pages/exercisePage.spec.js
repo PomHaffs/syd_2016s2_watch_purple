@@ -51,5 +51,4 @@ describe('The Exercise Page', function() {
         });
     });
   });
-
 });

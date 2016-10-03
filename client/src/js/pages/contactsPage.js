@@ -26,7 +26,7 @@ var contactsPage = Page.extend({
   // TODO use jquery to load a JSON file async test?
   seedContacts: function() {
     this.contactsCollection.reset([
-      {name: 'Adam', phoneNumber: '0431 111 111'},
+      {name: 'Adam',  phoneNumber: '0431 111 111'},
       {name: 'James', phoneNumber: '0431 222 222'},
       {name: 'Marzena', phoneNumber: '0431 333 333'}
     ]);
