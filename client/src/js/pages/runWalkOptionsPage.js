@@ -14,7 +14,7 @@ var runWalkOptionsPage = Page.extend({
   goToHome: function() {
     window.App.navigate('home');
   },
-  
+
   render: function() {
     this.$el.html(this.template());
     return this;
