@@ -17,7 +17,7 @@ describe('The ask emotion page', function() {
           spyOn(window.App, 'navigate');
           page.configureButtons();
           eventHub.trigger('top');
-          expect(window.App.navigate).toHaveBeenCalledWith('');
+          expect(window.App.navigate).toHaveBeenCalledWith('home');
         });
       });
 
@@ -35,7 +35,7 @@ describe('The ask emotion page', function() {
           spyOn(window.App, 'navigate');
           page.configureButtons();
           eventHub.trigger('face');
-          expect(window.App.navigate).toHaveBeenCalledWith('');
+          expect(window.App.navigate).toHaveBeenCalledWith('home');
         });
       });
     });
