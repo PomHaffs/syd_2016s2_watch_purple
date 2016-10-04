@@ -6,7 +6,8 @@ var exercisePage = Page.extend({
 
   buttonEvents: {
     face: 'goToHome',
-    top: 'goToRunWalkOptions'
+    top: 'goToRunWalkOptions',
+    bottom: 'goToYoga'
   },
 
   goToHome: function() {
@@ -15,6 +16,10 @@ var exercisePage = Page.extend({
 
   goToRunWalkOptions: function() {
     window.App.navigate('runWalkOptions');
+  },
+
+  goToYoga: function() {
+    window.App.navigate('yoga');
   },
 
   render: function() {

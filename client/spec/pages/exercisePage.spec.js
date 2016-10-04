@@ -39,8 +39,17 @@ describe('The Exercise Page', function() {
             page.configureButtons();
             eventHub.trigger('top');
             expect(window.App.navigate).toHaveBeenCalledWith('runWalkOptions');
-          });
-      });
+        });
+    });
+
+    describe ('bottom', function() {
+        it('should take the user to the YOGA page', function() {
+            spyOn(window.App, 'navigate');
+            page.configureButtons();
+            eventHub.trigger('bottom');
+            expect(window.App.navigate).toHaveBeenCalledWith('yoga');
+        });
+    });
   });
 
 });
