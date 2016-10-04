@@ -55,9 +55,14 @@ describe('The Home Page', function() {
 
   describe('rendering', function() {
 
-    it('should produce the correct HTML', function() {
+    it('should not show the logo', function() {
       page.render();
-      expect(page.$el).toContainText('Hello, World!');
+      expect(page.$el.html()).not.toContain('<img src="');
+    });
+
+    it('should not show lorem ipsum filler text', function() {
+      page.render();
+      expect(page.$el.html()).not.toContain('Lorem ipsum');
     });
 
     it('returns the view object', function() {

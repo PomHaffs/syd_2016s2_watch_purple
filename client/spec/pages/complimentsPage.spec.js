@@ -27,17 +27,20 @@ describe('The Compliments page', function() {
 
   });
 
-  // describe('rendering', function() {
-  //
-  //   it('should produce the correct HTML', function() {
-  //     page.render();
-  //     expect(page.$el).toContainText('Hello, World!');
-  //   });
-  //
-  //   it('returns the view object', function() {
-  //     expect(page.render()).toEqual(page);
-  //   });
-  //
-  // });
+  describe('rendering', function() {
+
+    it('returns the view object', function() {
+      expect(page.render()).toEqual(page);
+    });
+
+  });
+
+  describe('randomCompliments', function() {
+    it('should return a random compliment', function() {
+      var compliment = page.randomCompliments();
+      expect(compliment).not.toBeNull();
+    });
+
+  });
 
 });

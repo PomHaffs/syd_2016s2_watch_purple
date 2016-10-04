@@ -32,6 +32,15 @@ describe('The Exercise Page', function() {
         expect(window.App.navigate).toHaveBeenCalledWith('home');
       });
     });
+
+    describe ('top', function() {
+        it('should take the user to the RUN/WALK options page', function() {
+            spyOn(window.App, 'navigate');
+            page.configureButtons();
+            eventHub.trigger('top');
+            expect(window.App.navigate).toHaveBeenCalledWith('runWalkOptions');
+          });
+      });
   });
 
 });
