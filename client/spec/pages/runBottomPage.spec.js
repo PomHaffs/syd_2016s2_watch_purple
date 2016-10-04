@@ -14,7 +14,7 @@ describe('The Run Bottom Page', function() {
   describe ('rendering', function() {
     it('should display 200m distance to user', function() {
       page.render();
-      expect(page.$el).toContainText('START','200m');
+      expect(page.$el).toContainText('START', '200m');
     });
   });
 });
