@@ -20,6 +20,14 @@ describe('The ask emotion page', function() {
           expect(window.App.navigate).toHaveBeenCalledWith('');
         });
       });
+      describe ('bottom', function() {
+        it('should take the user to the exercise page', function() {
+          spyOn(window.App, 'navigate');
+          page.configureButtons();
+          eventHub.trigger('bottom');
+          expect(window.App.navigate).toHaveBeenCalledWith('exercise');
+        });
+      });
       describe ('face', function() {
         it('should take the user to the home page', function() {
           spyOn(window.App, 'navigate');

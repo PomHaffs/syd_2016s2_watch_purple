@@ -10,15 +10,16 @@ var AskEmotionPage = Page.extend({
 
   buttonEvents: {
     top: 'goToHome',
-    face: 'goToHome'
+    face: 'goToHome',
+    bottom: 'goToExercise',
   },
 
   goToHome: function() {
     window.App.navigate('');
   },
 
-  goToCompliments: function() {
-    window.App.navigate('compliments');
+  goToExercise: function() {
+    window.App.navigate('exercise');
   },
 
   render: function() {
