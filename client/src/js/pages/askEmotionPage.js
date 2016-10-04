@@ -1,6 +1,7 @@
 'use strict';
 
 var Page = require('watch_framework').Page;
+var Mood = require('../models/mood');
 
 var AskEmotionPage = Page.extend({
 
@@ -15,7 +16,12 @@ var AskEmotionPage = Page.extend({
   },
 
   goToHome: function() {
-    window.App.navigate('');
+    window.App.navigate('home');
+    var currentMood = new Mood({
+      mood: "Good",
+      timeDate: new Date()
+    });
+    console.log(currentMood);
   },
 
   goToExercise: function() {
