@@ -22,6 +22,7 @@ describe('The Exercise Page', function() {
       expect(page.$el).toContainText('YOGA');
     });
   });
+
   describe('button event handlers', function() {
     describe ('face', function() {
       it('should take the user back to the home page', function() {
@@ -31,13 +32,14 @@ describe('The Exercise Page', function() {
         expect(window.App.navigate).toHaveBeenCalledWith('home');
       });
     });
+
     describe ('top', function() {
-      it('should take the user to the RUN/WALK options page', function() {
-          spyOn(window.App, 'navigate');
-          page.configureButtons();
-          eventHub.trigger('top');
-          expect(window.App.navigate).toHaveBeenCalledWith('runWalkOptions');
-        });
+        it('should take the user to the RUN/WALK options page', function() {
+            spyOn(window.App, 'navigate');
+            page.configureButtons();
+            eventHub.trigger('top');
+            expect(window.App.navigate).toHaveBeenCalledWith('runWalkOptions');
+          });
       });
   });
 

@@ -12,6 +12,7 @@ var exercisePage = Page.extend({
   goToHome: function() {
     window.App.navigate('home');
   },
+
   goToRunWalkOptions: function() {
     window.App.navigate('runWalkOptions');
   },

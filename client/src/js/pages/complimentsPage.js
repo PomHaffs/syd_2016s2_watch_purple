@@ -1,7 +1,7 @@
 'use strict';
 
 var Page = require('watch_framework').Page,
-  storage = require ("../../storage");
+  storage = require ('../../storage');
 
 var complimentsPage = Page.extend({
 
@@ -24,9 +24,8 @@ var complimentsPage = Page.extend({
   render: function() {
     var compliment = this.randomCompliments();
 
-
-      this.$el.html(this.template({compliment:compliment}));
-      return this;
+    this.$el.html(this.template({compliment:compliment}));
+    return this;
   }
 
 });
