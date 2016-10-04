@@ -12,5 +12,7 @@ module.exports = {
   runWalkOptions: require('./runWalkOptionsPage'),
   yoga: require('./yogaPage'),
   runTop: require('./runTopPage'),
-  runBottom: require('./runBottomPage')
+  runBottom: require('./runBottomPage'),
+  runLeft: require('./runLeftPage'),
+  runRight: require('./runRightPage')
 };
