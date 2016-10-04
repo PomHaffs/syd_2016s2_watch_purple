@@ -10,5 +10,7 @@ module.exports = {
   compliments: require('./complimentsPage'),
   exercise: require('./exercisePage'),
   runWalkOptions: require('./runWalkOptionsPage'),
-  yoga: require('./yogaPage')
+  yoga: require('./yogaPage'),
+  runTop: require('./runTopPage'),
+  runBottom: require('./runBottomPage')
 };
