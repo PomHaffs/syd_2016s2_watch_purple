@@ -25,8 +25,8 @@ var AskEmotionPage = Page.extend({
 
   goToExercise: function() {
     window.App.navigate('exercise');
-    var currentMood = new Mood( {
-      mood: "Bad",
+    var currentMood = new Mood({
+      mood: 'Bad',
       timeDate: new Date()
     });
   },

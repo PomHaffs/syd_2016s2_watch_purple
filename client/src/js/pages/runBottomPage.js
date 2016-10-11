@@ -5,14 +5,11 @@ var runBottomPage = Page.extend({
   id: 'runBottom',
 
   buttonEvents: {
+    face: 'goToHome',
     bottom: 'goToRunBottomStart'
   },
 
   template: require('../../templates/pages/runBottom.hbs'),
-
-  buttonEvents: {
-      face: "goToHome"
-  },
 
   goToHome: function() {
     window.App.navigate('home');

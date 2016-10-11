@@ -29,7 +29,7 @@ var runBottomStartPage = Page.extend({
         $('#runTimer').text(msg);
       }, 500);
 
-      window.setTimeout(function(){
+      window.setTimeout(function() {
         $('#runTimer').text('Great work Susie, you are amazing!');
         clearInterval(timer);
       }, 40000);

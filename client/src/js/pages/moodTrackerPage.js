@@ -10,7 +10,7 @@ var MoodTrackerPage = Page.extend({
   template: require('../../templates/pages/moodTracker.hbs'),
 
   buttonEvents: {
-   
+
   },
 
   render: function() {

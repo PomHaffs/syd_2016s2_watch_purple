@@ -7,8 +7,8 @@ var runRightPage = Page.extend({
   template: require('../../templates/pages/runRight.hbs'),
 
   buttonEvents: {
-      face: "goToHome"
-  },
+      face: 'goToHome'
+    },
 
   goToHome: function() {
     window.App.navigate('home');
