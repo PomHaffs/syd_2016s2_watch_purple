@@ -35,7 +35,6 @@ var runWalkOptionsPage = Page.extend({
     window.App.navigate('runRight');
   },
 
-
   render: function() {
     this.$el.html(this.template());
     return this;

@@ -1,6 +1,6 @@
 'use strict';
 
-var runBottomStartPage = require('../../src/js/pages/runBottomStartPage'),
+var RunBottomStartPage = require('../../src/js/pages/runBottomStartPage'),
   App = require('../../src/js/app'),
   eventHub = require('watch_framework').EventHub,
   page;
@@ -8,7 +8,7 @@ var runBottomStartPage = require('../../src/js/pages/runBottomStartPage'),
 describe('The Run Bottom Start Page', function() {
 
   beforeEach(function() {
-    page = new runBottomStartPage();
+    page = new RunBottomStartPage();
   });
 
   describe ('rendering', function() {
@@ -16,6 +16,10 @@ describe('The Run Bottom Start Page', function() {
       page.render();
       expect(page.$el).toContainText('remaining');
     });
-  });
 
+    it('should display starting distance', function() {
+      page.render();
+      expect(page.$el).toContainText('200 m');
+    });
+  });
 });

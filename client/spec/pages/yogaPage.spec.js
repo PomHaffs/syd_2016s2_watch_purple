@@ -38,5 +38,4 @@ describe('The Yoga Page', function() {
   //   });
   // });
 
-
 });

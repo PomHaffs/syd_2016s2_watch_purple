@@ -12,13 +12,13 @@ var AskEmotionPage = Page.extend({
   buttonEvents: {
     top: 'goToHome',
     face: 'goToHome',
-    bottom: 'goToExercise',
+    bottom: 'goToExercise'
   },
 
   goToHome: function() {
     window.App.navigate('home');
     var currentMood = new Mood({
-      mood: "Good",
+      mood: 'Good',
       timeDate: new Date()
     });
   },
