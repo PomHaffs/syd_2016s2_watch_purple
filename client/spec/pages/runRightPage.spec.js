@@ -11,6 +11,17 @@ describe('The Run Right Page', function() {
     page = new RunRightPage();
   });
 
+  describe('button event handlers', function() {
+    describe ('face', function() {
+      it('should take the user back to the home page', function() {
+        spyOn(window.App, 'navigate');
+        page.configureButtons();
+        eventHub.trigger('face');
+        expect(window.App.navigate).toHaveBeenCalledWith('home');
+      });
+    });
+  });
+
   describe ('rendering', function() {
     it('should display 1.2km distance to user', function() {
       page.render();

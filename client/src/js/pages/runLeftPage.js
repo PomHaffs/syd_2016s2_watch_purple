@@ -6,6 +6,14 @@ var runLeftPage = Page.extend({
 
   template: require('../../templates/pages/runLeft.hbs'),
 
+  buttonEvents: {
+      face: "goToHome"
+  },
+  
+  goToHome: function() {
+    window.App.navigate('home');
+  },
+
   render: function() {
     this.$el.html(this.template());
     return this;
