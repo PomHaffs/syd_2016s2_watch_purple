@@ -21,10 +21,18 @@ var AskEmotionPage = Page.extend({
       mood: "Good",
       timeDate: new Date()
     });
+    console.log(currentMood);
+   // console.log(currentMood.timeDate);
   },
 
   goToExercise: function() {
     window.App.navigate('exercise');
+    var currentMood = new Mood( {
+      mood: "Bad",
+      timeDate: new Date()
+    });
+    console.log(currentMood);
+  //  console.log(currentMood.timeDate);
   },
 
   render: function() {
