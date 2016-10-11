@@ -22,7 +22,6 @@ var AskEmotionPage = Page.extend({
       timeDate: new Date()
     });
     console.log(currentMood);
-   // console.log(currentMood.timeDate);
   },
 
   goToExercise: function() {
@@ -32,7 +31,6 @@ var AskEmotionPage = Page.extend({
       timeDate: new Date()
     });
     console.log(currentMood);
-  //  console.log(currentMood.timeDate);
   },
 
   render: function() {
