@@ -28,4 +28,15 @@ describe('The Run Bottom Page', function() {
       expect(page.$el).toContainText('START', '200m');
     });
   });
+
+  describe('button event handlers', function() {
+    describe('bottom', function() {
+      it('should take the user to the run bottom start page', function() {
+        spyOn(window.App, 'navigate');
+        page.configureButtons();
+        eventHub.trigger('bottom');
+        expect(window.App.navigate).toHaveBeenCalledWith('runBottomStart');
+      });
+    });
+  });
 });
