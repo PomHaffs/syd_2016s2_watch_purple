@@ -26,16 +26,13 @@ var runBottomStartPage = Page.extend({
       var timer = window.setInterval(function() {
         start -= 1;
         var msg = start.toFixed(0) + ' m';
+        $('#runTimer').text(msg);
+      }, 500);
 
-        if (start <= 0) {
-          msg = 'Great work!';
-          $('#runTimer').text(msg);
-          clearInterval(timer);
-        } else {
-          $('#runTimer').text(msg);
-        }
-
-      }, 350);
+      window.setTimeout(function(){
+        $('#runTimer').text('Great work Susie, you are amazing!');
+        clearInterval(timer);
+      }, 40000);
     });
   }
 });
