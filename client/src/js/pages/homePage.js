@@ -11,7 +11,7 @@ var homePage = Page.extend({
   buttonEvents: {
     top: 'goToAskEmotion',
     right: 'goToCompliments',
-    bottom: 'scrollDown',
+    bottom: 'goToMoodTracker',
     left: 'goToExercise'
   },
 
@@ -23,16 +23,12 @@ var homePage = Page.extend({
     window.App.navigate('askEmotion');
   },
 
-  scrollUp: function() {
-    $('#watch-face').animate({scrollTop: '-=70px'});
-  },
-
-  scrollDown: function() {
-    $('#watch-face').animate({scrollTop: '+=70px'});
-  },
-
   goToExercise: function() {
     window.App.navigate('exercise');
+  },
+
+  goToMoodTracker: function() {
+    window.App.navigate('moodTracker');
   },
 
   render: function() {

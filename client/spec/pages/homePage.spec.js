@@ -43,11 +43,11 @@ describe('The Home Page', function() {
     });
 
     describe('bottom', function() {
-      it('should scroll the watch face down', function() {
-        spyOn(page, 'scrollDown');
+      it('should display the moodTracker page', function() {
+        spyOn(window.App, 'navigate');
         page.configureButtons();
         eventHub.trigger('bottom');
-        expect(page.scrollDown).toHaveBeenCalled();
+        expect(window.App.navigate).toHaveBeenCalledWith('moodTracker');
       });
     });
 

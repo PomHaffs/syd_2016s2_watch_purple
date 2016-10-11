@@ -14,5 +14,6 @@ module.exports = {
   runTop: require('./runTopPage'),
   runBottom: require('./runBottomPage'),
   runLeft: require('./runLeftPage'),
-  runRight: require('./runRightPage')
+  runRight: require('./runRightPage'),
+  moodTracker: require('./moodTrackerPage')
 };

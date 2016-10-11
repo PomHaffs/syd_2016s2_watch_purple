@@ -21,7 +21,6 @@ var AskEmotionPage = Page.extend({
       mood: "Good",
       timeDate: new Date()
     });
-    console.log(currentMood);
   },
 
   goToExercise: function() {
@@ -30,7 +29,6 @@ var AskEmotionPage = Page.extend({
       mood: "Bad",
       timeDate: new Date()
     });
-    console.log(currentMood);
   },
 
   render: function() {
