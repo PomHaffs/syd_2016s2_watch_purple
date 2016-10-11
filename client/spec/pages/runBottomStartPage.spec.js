@@ -22,4 +22,20 @@ describe('The Run Bottom Start Page', function() {
       expect(page.$el).toContainText('200 m');
     });
   });
+
+  describe ('myFunction', function() {
+    it('returns true if 4', function() {
+      var result = page.myFunction(4);
+      expect(result).toEqual(true);
+    });
+  });
+
+  describe ('myFunction', function() {
+    it('returns false if 1', function() {
+      var result = page.myFunction(1);
+      expect(result).toEqual(false);
+    });
+  });
+
+
 });

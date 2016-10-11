@@ -12,20 +12,28 @@ var runBottomStartPage = Page.extend({
     return this;
   },
 
+  myFunction: function(arg) {
+    if (arg > 2) {
+      return true;
+    } else {
+      return false;
+    }
+  },
+
   timer: function() {
     $(document).ready(function() {
-
       var start = 200;
       var timer = window.setInterval(function() {
         start -= 1;
         var msg = start.toFixed(0) + ' m';
-        if (start === 0) {
+
+        if (start <= 0) {
           msg = 'Great work!';
           $('#runTimer').text(msg);
           clearInterval(timer);
+        } else {
+          $('#runTimer').text(msg);
         }
-
-        $('#runTimer').text(msg);
 
       }, 350);
     });
