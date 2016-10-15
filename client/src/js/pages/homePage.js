@@ -36,12 +36,11 @@ var homePage = Page.extend({
     var nowString = now.toLocaleTimeString('en-US', {
       hour: '2-digit',
       minute: '2-digit'
-    })
+    });
+    
     this.$el.html(this.template({
       currentTime: nowString
     }));
-
-
     return this;
   }
 
