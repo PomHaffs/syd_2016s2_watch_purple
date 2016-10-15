@@ -44,4 +44,13 @@ describe('The Run Bottom Start Page', function() {
       expect(window.setInterval).toHaveBeenCalled();
     });
   });
+
+  describe ('face button', function() {
+    it('should go to the home page when the face button is pressed', function() {
+      spyOn(window.App, 'navigate');
+      page.configureButtons();
+      eventHub.trigger('face');
+      expect(window.App.navigate).toHaveBeenCalledWith('home');
+    });
+  });
 });

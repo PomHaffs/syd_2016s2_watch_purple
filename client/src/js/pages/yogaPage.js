@@ -27,7 +27,6 @@ var yogaPage = Page.extend({
     return storage.posesData.sample().get('name');
   },
 
-
   render: function() {
     var name = this.randomPoses();
 

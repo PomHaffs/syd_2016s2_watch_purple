@@ -5,7 +5,15 @@ var Page = require('watch_framework').Page;
 var runBottomStartPage = Page.extend({
   id: 'runBottomStart',
 
+  buttonEvents: {
+    face:'goToHome'
+  },
+
   template: require('../../templates/pages/runBottomStart.hbs'),
+
+  goToHome: function() {
+    window.App.navigate('home');
+  },
 
   render: function() {
     this.timer();
