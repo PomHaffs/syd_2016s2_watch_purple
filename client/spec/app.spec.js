@@ -88,5 +88,4 @@ describe('The App', function() {
     });
   });
 
-
 });

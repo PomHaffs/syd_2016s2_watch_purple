@@ -78,37 +78,37 @@ describe('The Home Page', function() {
     var year;
     var formatDateString;
 
-    beforeEach(function(){
+    beforeEach(function() {
       now = new Date();
       date = now.getDate();
       month = now.getMonth() + 1;
       year = now.getFullYear();
-      formatDateString = page.formatDate(date,month,year);
+      formatDateString = page.formatDate(date, month, year);
     });
 
     it('should display relevent AM or PM based on current hour', function() {
       var now = new Date();
       var hour = now.getHours();
-      var amPm = "";
+      var amPm = '';
       if (hour < 12) {
-        amPm = "AM";
+        amPm = 'AM';
       }
       else {
-        amPm = "PM";
+        amPm = 'PM';
       }
+
       page.render();
       expect(page.$el.html().toUpperCase()).toContain(amPm);
     });
 
-    it('should return the correct date format dd/mm/yyyy', function(){
+    it('should return the correct date format dd/mm/yyyy', function() {
       expect(formatDateString).toMatch(/\d*\/\d*\/(\d){4}/);
     });
 
-    it('should display the correct date format on home page', function(){
+    it('should display the correct date format on home page', function() {
       page.render();
       expect(page.$el.html()).toContain(formatDateString);
     });
   });
-
 
 });

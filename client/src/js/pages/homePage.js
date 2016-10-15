@@ -32,7 +32,7 @@ var homePage = Page.extend({
   },
 
   formatDate: function(date,month,year) {
-    var result = date + "/" + month + "/" + year;
+    var result = date + '/' + month + '/' + year;
     return result;
   },
 
@@ -46,7 +46,7 @@ var homePage = Page.extend({
     var date = now.getDate();
     var month = now.getMonth() + 1;
     var year = now.getFullYear();
-    var dateString = this.formatDate(date,month, year);
+    var dateString = this.formatDate(date, month, year);
 
     this.$el.html(this.template({
       currentTime: nowString,
