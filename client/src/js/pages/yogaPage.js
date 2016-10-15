@@ -9,7 +9,8 @@ var yogaPage = Page.extend({
 
   buttonEvents: {
     face: 'goToHome',
-    bottom: 'goToHome'
+    bottom: 'goToCompliments'
+
   },
 
   template: require('../../templates/pages/yoga.hbs'),
@@ -18,9 +19,14 @@ var yogaPage = Page.extend({
     window.App.navigate('home');
   },
 
+  goToCompliments: function() {
+    window.App.navigate('compliments');
+  },
+
   randomPoses: function() {
     return storage.posesData.sample().get('name');
   },
+
 
   render: function() {
     var name = this.randomPoses();

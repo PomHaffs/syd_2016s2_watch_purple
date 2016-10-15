@@ -28,14 +28,13 @@ describe('The Yoga Page', function() {
   //     });
   //   });
 
-  //   describe('bottom', function() {
-  //     it('should complete the exercise and take user back to home page (placeholder)', function() {
-  //       spyOn(window.App, 'navigate');
-  //       page.configureButtons();
-  //       eventHub.trigger('bottom');
-  //       expect(window.App.navigate).toHaveBeenCalledWith('home');
-  //     });
-  //   });
-  // });
+  describe('bottom', function() {
+    it('should complete the exercise and take user to the compliment page', function() {
+      spyOn(window.App, 'navigate');
+      page.configureButtons();
+      eventHub.trigger('bottom');
+      expect(window.App.navigate).toHaveBeenCalledWith('compliments');
+    });
+  });
 
 });
