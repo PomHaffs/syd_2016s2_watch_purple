@@ -273,3 +273,29 @@ textarea {
     text-align: center;
   }
 }
+
+.homePage {
+    margin-top: -50px;
+    margin-left: -38px;
+    border-radius: 80px;
+    width: 290px;
+    height: 290px;
+    background-size: 290px 290px;
+    background-repeat: no-repeat;
+    background-image: url("../../src/images/homePage.png") !important;
+}
+
+#current-time {
+    padding-top: 80px;
+    font-size: 35px;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+}
+
+#current-date {
+    font-size: 16px;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+}
