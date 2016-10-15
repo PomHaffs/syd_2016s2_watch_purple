@@ -78,13 +78,22 @@ describe('The Home Page', function() {
       var hour = now.getHours();
       var amPm = "";
       if (hour < 12) {
-        amPm = "am";
+        amPm = "AM";
       }
       else {
-        amPm = "pm";
+        amPm = "PM";
       }
       page.render();
-      expect(page.$el.html()).toContain(amPm);
+      expect(page.$el.html().toUpperCase()).toContain(amPm);
+    });
+
+    it('should display the correct date format dd/mm/yyyy', function(){
+      var now = new Date();
+      var date = now.getDate();
+      var month = now.getMonth() + 1;
+      var year = now.getFullYear();
+      var formatDateString = page.formatDate(date,month,year);
+      expect(formatDateString).toMatch(/\d*\/\d*\/(\d){4}/);
     });
   });
 

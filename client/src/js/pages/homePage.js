@@ -31,13 +31,18 @@ var homePage = Page.extend({
     window.App.navigate('moodTracker');
   },
 
+  formatDate: function(date,month,year) {
+    var result = date + "/" + month + "/" + year;
+    return result;
+  },
+
   render: function() {
     var now = new Date();
     var nowString = now.toLocaleTimeString('en-US', {
       hour: '2-digit',
       minute: '2-digit'
     });
-    
+
     this.$el.html(this.template({
       currentTime: nowString
     }));
