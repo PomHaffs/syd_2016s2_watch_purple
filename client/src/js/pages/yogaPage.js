@@ -1,7 +1,7 @@
 'use strict';
 
 var Page = require('watch_framework').Page,
-  storage = require ('../../storage');
+  storage = require('../../storage');
 
 var yogaPage = Page.extend({
 
@@ -24,13 +24,17 @@ var yogaPage = Page.extend({
   },
 
   randomPoses: function() {
-    return storage.posesData.sample().get('name');
+    return storage.posesData.sample().attributes;
   },
 
   render: function() {
-    var name = this.randomPoses();
-
-    this.$el.html(this.template({name:name}));
+    var pose = this.randomPoses();
+    var image = pose.imgPath;
+    this.$el.html(this.template({
+      name: pose.name,
+      image: pose.imgPath,
+      description: pose.description
+    }));
     return this;
   }
 });

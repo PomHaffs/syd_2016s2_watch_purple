@@ -257,6 +257,27 @@ textarea {
   width: 97px;
 }
 
+.yoga-page {
+  overflow: scroll;
+  height: 240px;
+}
+.yoga-name {
+  text-align: center;
+  font-size: 20px;
+}
+.yoga-description {
+  font-size: 15px;
+  font-weight: normal;
+  white-space: pre-wrap;
+}
+.yoga-image {
+  width: 150px;
+  max-height: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+
 // moodTracker layout
 .moodTracker {
 
