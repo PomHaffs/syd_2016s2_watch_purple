@@ -194,7 +194,7 @@ textarea {
 }
 
 // Exercisepage CSS layout
-.exercise-top, .exercise-bottom, .runPage {
+.exercise-top, .exercise-bottom, .runPageStart {
   font-size: 30px;
   position: absolute;
   transform: translate(-50%,-50%);
@@ -210,12 +210,12 @@ textarea {
   left: 50%;
 }
 
-.runPage.start {
+.runPageStart.start {
   bottom: -15%;
   left: 50%;
 }
 
-.runPage.distance {
+.runPageStart.distance {
   left: 50%;
 }
 
