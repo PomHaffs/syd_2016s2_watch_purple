@@ -72,6 +72,19 @@ describe('The Home Page', function() {
   });
 
   describe('clock', function() {
+    var now;
+    var date;
+    var month;
+    var year;
+    var formatDateString;
+
+    beforeEach(function(){
+      now = new Date();
+      date = now.getDate();
+      month = now.getMonth() + 1;
+      year = now.getFullYear();
+      formatDateString = page.formatDate(date,month,year);
+    });
 
     it('should display relevent AM or PM based on current hour', function() {
       var now = new Date();
@@ -87,13 +100,13 @@ describe('The Home Page', function() {
       expect(page.$el.html().toUpperCase()).toContain(amPm);
     });
 
-    it('should display the correct date format dd/mm/yyyy', function(){
-      var now = new Date();
-      var date = now.getDate();
-      var month = now.getMonth() + 1;
-      var year = now.getFullYear();
-      var formatDateString = page.formatDate(date,month,year);
+    it('should return the correct date format dd/mm/yyyy', function(){
       expect(formatDateString).toMatch(/\d*\/\d*\/(\d){4}/);
+    });
+
+    it('should display the correct date format on home page', function(){
+      page.render();
+      expect(page.$el.html()).toContain(formatDateString);
     });
   });
 
