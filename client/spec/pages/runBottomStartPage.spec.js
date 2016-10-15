@@ -37,4 +37,11 @@ describe('The Run Bottom Start Page', function() {
     });
   });
 
+  describe ('timer', function() {
+    it('should call window.setInterval()', function() {
+      spyOn(window, 'setInterval');
+      page.render();
+      expect(window.setInterval).toHaveBeenCalled();
+    });
+  });
 });

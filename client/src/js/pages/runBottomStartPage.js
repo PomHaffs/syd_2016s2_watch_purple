@@ -1,6 +1,7 @@
 'use strict';
 
 var Page = require('watch_framework').Page;
+
 var runBottomStartPage = Page.extend({
   id: 'runBottomStart',
 
@@ -30,9 +31,9 @@ var runBottomStartPage = Page.extend({
       }, 500);
 
       window.setTimeout(function() {
-        $('#runTimer').text('Great work Susie, you are amazing!');
+        window.App.navigate('compliments');
         clearInterval(timer);
-      }, 40000);
+      }, 100000);
     });
   }
 });
