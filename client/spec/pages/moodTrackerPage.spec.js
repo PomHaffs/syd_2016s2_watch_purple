@@ -34,6 +34,4 @@ describe('The Mood Tracker Page', function() {
     });
   });
 
-
-
 });

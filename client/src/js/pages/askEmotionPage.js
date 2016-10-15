@@ -23,8 +23,8 @@ var AskEmotionPage = Page.extend({
     });
 
     window.currentMood.push(
-      new Mood( {
-        mood: "Feeling great ^_^",
+      new Mood({
+        mood: 'Feeling great ^_^',
         timeDate: new Date()
       })
     );
@@ -37,12 +37,11 @@ var AskEmotionPage = Page.extend({
       timeDate: new Date()
     });
     window.currentMood.push(
-      new Mood( {
-        mood: "Not so good :(",
+      new Mood({
+        mood: 'Not so good :(',
         timeDate: new Date()
       })
     );
-    console.log(window.currentMood);
   },
 
   render: function() {
