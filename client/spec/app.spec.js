@@ -86,11 +86,7 @@ describe('The App', function() {
       app.navigate('foo');
       expect(app.router.navigate).toHaveBeenCalledWith('foo', true);
     });
-
   });
 
-  xdescribe('clock', function() {
-    it('should start the clock');
-  });
 
 });

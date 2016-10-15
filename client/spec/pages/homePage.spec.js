@@ -71,4 +71,22 @@ describe('The Home Page', function() {
 
   });
 
+  describe('clock', function() {
+
+    it('should display relevent AM or PM based on current hour', function() {
+      var now = new Date();
+      var hour = now.getHours();
+      var amPm = "";
+      if (hour < 12) {
+        amPm = "am";
+      }
+      else {
+        amPm = "pm";
+      }
+      page.render();
+      expect(page.$el.html()).toContain(amPm);
+    });
+  });
+
+
 });
