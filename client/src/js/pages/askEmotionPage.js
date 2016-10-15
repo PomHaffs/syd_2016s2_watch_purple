@@ -21,6 +21,13 @@ var AskEmotionPage = Page.extend({
       mood: 'Good',
       timeDate: new Date()
     });
+
+    window.currentMood.push(
+      new Mood( {
+        mood: "Feeling great ^_^",
+        timeDate: new Date()
+      })
+    );
   },
 
   goToExercise: function() {
@@ -29,6 +36,13 @@ var AskEmotionPage = Page.extend({
       mood: 'Bad',
       timeDate: new Date()
     });
+    window.currentMood.push(
+      new Mood( {
+        mood: "Not so good :(",
+        timeDate: new Date()
+      })
+    );
+    console.log(window.currentMood);
   },
 
   render: function() {

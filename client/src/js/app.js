@@ -78,4 +78,6 @@ _.extend(app, Backbone.Events);
 // FIXME this is a hack to resolve issue with the router design
 window.App = app;
 
+window.currentMood = [];
+
 module.exports = app;
