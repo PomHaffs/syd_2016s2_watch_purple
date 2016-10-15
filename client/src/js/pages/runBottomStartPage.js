@@ -28,12 +28,12 @@ var runBottomStartPage = Page.extend({
         start -= 1;
         var msg = start.toFixed(0) + ' m';
         $('#runTimer').text(msg);
-      }, 500);
+      }, 50);
 
       window.setTimeout(function() {
         window.App.navigate('compliments');
         clearInterval(timer);
-      }, 100000);
+      }, 10000);
     });
   }
 });
