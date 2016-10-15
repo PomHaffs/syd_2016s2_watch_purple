@@ -20,11 +20,6 @@ var exercisePage = Page.extend({
 
   goToYoga: function() {
     window.App.navigate('yoga');
-  },
-
-  render: function() {
-    this.$el.html('<div class="exercise-top">RUN/WALK</div><div class="exercise-bottom">YOGA</div>');
-    return this;
   }
 
 });

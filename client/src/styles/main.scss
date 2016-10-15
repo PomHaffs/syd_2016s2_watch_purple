@@ -323,3 +323,25 @@ textarea {
     font-style: normal;
     font-weight: bold;
 }
+
+.runOptions{
+    margin-top: -25px;
+    margin-left: -36px;
+    border-radius: 80px;
+    width: 290px;
+    height: 290px;
+    background-size: 290px 290px;
+    background-repeat: no-repeat;
+    background-image: url("../../src/images/runBackground.png") !important;
+}
+
+#exercise{
+    margin-top: -25px;
+    margin-left: -36px;
+    border-radius: 80px;
+    width: 290px;
+    height: 290px;
+    background-size: 290px 290px;
+    background-repeat: no-repeat;
+    background-image: url("../../src/images/exerciseBackground.png") !important;
+}
